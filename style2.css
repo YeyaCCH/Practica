@@ -1,0 +1,80 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Registro */
+.register-container {
+    background-color: #a67b52;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-box h1 {
+    font-size: 32px;
+    color: #6b5639;
+    margin-bottom: 20px;
+}
+
+.register-box label {
+    display: block;
+    font-size: 18px;
+    color: #6b5639;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.register-box input[type="text"],
+.register-box input[type="email"],
+.register-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-box button {
+    background-color: #6b5639;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-box button:hover {
+    background-color: #4f3c2a;
+}
+.register-box .button-link {
+    display: inline-block; /* Para que se comporte como un botón */
+    background-color: #6b5639; /* Mismo color de fondo */
+    color: #fff; /* Mismo color de texto */
+    padding: 10px 20px; /* Mismo padding */
+    border-radius: 5px; /* Mismo border-radius */
+    font-size: 18px; /* Mismo tamaño de fuente */
+    text-decoration: none; /* Quitar subrayado */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.register-box .button-link:hover {
+    background-color: #4f3c2a; /* Mismo color en hover */
+}

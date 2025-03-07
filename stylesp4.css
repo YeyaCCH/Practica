@@ -1,0 +1,106 @@
+/* Reiniciar márgenes y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8b083;
+    min-height: 100vh;
+}
+
+/* Estilo del encabezado */
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Contenedor principal de los items */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo general para cada item */
+.item {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    color: #5a3e2d;
+    border-radius: 5px;
+}
+
+/* Estilos de título y texto dentro del item */
+.item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 0.9em;
+    color: #5a3e2d;
+    line-height: 1.5;
+}
+
+/* Estilo de imagen general */
+.imagen {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1); /* Fondo oscuro con opacidad */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: pre-line;
+}
+.info-overlay p{
+    color: white;
+}
+
+.imagen:hover .info-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Bordes redondeados adicionales solo para algunos items */
+.redondeada {
+    border-radius: 20px 20px 0 0;
+}
+
+.imangencity {
+    height: 100%;
+    width: 80%;
+}

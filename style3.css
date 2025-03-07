@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Header / Nav */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #6b5639;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+nav ul li a.contactos,
+nav ul li a[href="foro.html"] {
+    padding: 5px 10px;
+}
+
+/* Hero section */
+.hero {
+    background-color: #a67b52;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6b5639;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
